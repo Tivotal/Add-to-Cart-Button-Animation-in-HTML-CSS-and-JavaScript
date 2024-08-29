@@ -78,17 +78,6 @@ body {
   stroke-width: 2px;
 }
 
-.btn .cart svg .tick {
-  stroke: #000;
-  stroke-dasharray: 10px;
-  stroke-dashoffset: 10px;
-  transition: 0.4s ease 1.73s;
-}
-
-.btn.adding .cart svg .tick {
-  stroke-dashoffset: 0px;
-}
-
 .btn .cart::before,
 .btn .cart::after {
   position: absolute;
@@ -118,6 +107,17 @@ body {
 
 .btn.adding .cart::after {
   transform: perspective(4px) rotateX(-6deg) scaleY(1);
+}
+
+.btn .cart svg .tick {
+  stroke: #000;
+  stroke-dasharray: 10px;
+  stroke-dashoffset: 10px;
+  transition: 0.4s ease 1.73s;
+}
+
+.btn.adding .cart svg .tick {
+  stroke-dashoffset: 0px;
 }
 
 .btn.adding .cart {
